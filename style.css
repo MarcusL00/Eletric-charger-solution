@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    background: #131313;
+    background: #011b12;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -141,7 +141,7 @@ a.button {
     }
 
         .navbarMenu.active {
-            background: #131313;
+            background: #011b12;
             top: 100%;
             opacity: 1;
             transition: all 0.5s ease;
@@ -252,17 +252,31 @@ a.button {
 .card-text {
     flex-grow: 1;
 }
-
+@media (max-width: 767.98px) {
+    .card .img-fit {
+        aspect-ratio: 1.45/1;
+    }
+}
+/* Buttons to reservate the charger */
 .custom-btn {
-    color: #000; /* Text color */
-    background-color: #84B589; /* Your custom color */
-
-  }
+    color: #000; 
+    background-color: #84B589; 
+    
+}
 .custom-btn:hover{
     color: #fff;
     background-color:#456F40;
     
 }
+/* booking */
+    input[type="text"],
+    input[type="adress"],
+    input[type="time"] {
+    border-radius: 5px; 
+    padding: 8px; 
+    margin: 5px 0; 
+    box-sizing: border-box; 
+  }
 
 .formContainer{
     background-color: #dceadc;
@@ -270,9 +284,41 @@ a.button {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    height: 400px;
+    width: 80%;
 }
-@media (max-width: 767.98px) {
-    .card .img-fit {
-        aspect-ratio: 1.45/1;
-    }
+.formText{
+    margin-top: 10px;
+}
+ label {
+    display: block;
+    margin-bottom: 5px;
+}
+.reserveBtn{
+    color: #000; 
+    background-color: #84B589;
+    border-radius: 5px;
+    padding: 10px; 
+    cursor: pointer;
+}
+.reserveBtn:hover{
+    color: #fff;
+    background-color:#456F40;
+}
+
+.toggle-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-button.active {
+  background-color: #4CAF50;
+  color: white;
 }
