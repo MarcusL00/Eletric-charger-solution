@@ -253,7 +253,24 @@ a.button {
     flex-grow: 1;
 }
 
+.custom-btn {
+    color: #000; /* Text color */
+    background-color: #84B589; /* Your custom color */
 
+  }
+.custom-btn:hover{
+    color: #fff;
+    background-color:#456F40;
+    
+}
+
+.formContainer{
+    background-color: #dceadc;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
 @media (max-width: 767.98px) {
     .card .img-fit {
         aspect-ratio: 1.45/1;
