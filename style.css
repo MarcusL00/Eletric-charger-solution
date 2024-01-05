@@ -284,12 +284,13 @@ a.button {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    margin-top:50px;
+    margin-top:15px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     height: 400px;
     width: 80%;
+    padding-top: 15px;
 }
 .formText{
     margin-top: 10px;
@@ -309,10 +310,14 @@ a.button {
     color: #fff;
     background-color:#456F40;
 }
+.reserveBtnContainer{
+    margin-top: 10px;
+}
 
 .toggle-button {
   padding: 10px;
   margin: 5px;
+  border-radius: 10px;
   background-color: #ddd;
   border: none;
   cursor: pointer;
@@ -321,4 +326,24 @@ a.button {
 .toggle-button.active {
   background-color: #4CAF50;
   color: white;
+}
+
+
+/* Rules */
+
+.rulesContainer{
+    background-color: #dceadc;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    height: 400px;
+    width: 80%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
 }
