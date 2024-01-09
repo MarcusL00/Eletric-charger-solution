@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function submitForm() {
       const selectedTime = document.querySelector('.toggle-button.active');
       if (selectedTime) {
-        alert('Reservation successful for ' + selectedTime.innerText);
+        alert('Din reservation er blevet oprette til kl. ' + selectedTime.innerText);
         window.location.href = '/index.html';
       } else {
-        alert('Please select a time before reserving.');
+        alert('Venligst vælg et tidspunkt.');
       }
     }
   
