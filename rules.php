@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="navbarContainer">
       
-            <a href="/index.html" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
+            <a href="/Eletric-charger-solution/index.php" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
             <div class="navbarToggle" id="mobileMenu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -23,20 +23,20 @@
             </div>
             <ul class="navbarMenu">
                 <li class="navbarItem">
-                    <a href="/rules.html" class="navbarLinks">
+                    <a href="/Eletric-charger-solution/rules.php" class="navbarLinks">
                         Informationer
                       </a>
                   </li>
                   <li class="navbarItem">
-                      <a href="/booking.html" class="navbarLinks">
+                      <a href="/Eletric-charger-solution/booking.php" class="navbarLinks">
                           Reservering
                       </a>
                   </li>
                   <li class="navbarItem">
-                      <a href="/admin.html" class="navbarLinks"><i class="bi bi-shield-lock-fill"></i> Admin</a>
+                      <a href="/Eletric-charger-solution/admin.php" class="navbarLinks"><i class="bi bi-shield-lock-fill"></i> Admin</a>
                   </li>
                 <li class="navbarBtn">
-                    <a href="/contact.html" class="button">
+                    <a href="/Eletric-charger-solution/contact.php" class="button">
                         Kontakt
                     </a>
                 </li>
