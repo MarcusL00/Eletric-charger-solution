@@ -1,3 +1,44 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $pwd = $_POST["pwd"];
+    $email = $_POST["email"];
+    $licenseplate = $_POST["licenseplate"];
+    $licenseplateExtra = $_POST["licenseplateExtra"];
+
+    try {
+        require_once "dbh.inc.php";
+
+        $query = "SELECT * FROM reservations;";
+
+        $stmt = $pdo->prepare($query);
+
+        $stmt->bindParam(":username", $username);
+        $stmt->bindParam(":pwd", $pwd);
+        $stmt->bindParam(":email", $email);
+        $stmt->bindParam(":licenseplate", $licenseplate);
+        $stmt->bindParam(":licenseplateExtra", $licenseplateExtra);
+
+
+
+        $stmt->execute();
+
+        $pdo = null;
+        $stmt = null;
+
+        header("Location: /Eletric-charger-solution/charger.php"); 
+
+        die();
+    } catch (PDOException $e) { 
+        die("Query failed: " . $e->getMessage());
+    }
+} else {
+    header("Location: /Eletric-charger-solution/charger.php"); 
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +55,7 @@
     <nav class="navbar">
       <div class="navbarContainer">
     
-          <a href="/Eletric-charger-solution/index.php" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
+          <a href="/Eletric-charger-solution/charger.php" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
           <div class="navbarToggle" id="mobileMenu">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -42,84 +83,28 @@
           </ul>
       </div>
       <div class="tableContainer">
-          <table>
-              <thead>
-                <tr>
-                  <th>ID
-                  <th>Nummerplade
-                  <th>Adresse
-                  <th>Reservation
-                  <th>Tid
-                  <th>Rediger
-                  <th>Slet
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1
-                  <td>Malcolm
-                  <td>Reynolds
-                  <td>Captain
-                  <td>Yes
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr>
-                  <td>2
-                  <td>Zoe
-                  <td>Washburn
-                  <td>First Mate
-                  <td>Yes
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr class="disabled">
-                  <td>3
-                  <td>Hoban
-                  <td>Washburn
-                  <td>Pilot
-                  <td>No
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr>
-                  <td>4
-                  <td>Kaylee
-                  <td>Frye
-                  <td>Mechanic
-                  <td>Yes
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr>
-                  <td>5
-                  <td>Jayne
-                  <td>Cobb
-                  <td>Muscle
-                  <td>Yes
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr class="disabled">
-                  <td>6
-                  <td>[unknown]
-                  <td>Book
-                  <td>Passenger
-                  <td>No
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr>
-                  <td>7
-                  <td>Simon
-                  <td>Tam
-                  <td>Passenger
-                  <td>Yes
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-                <tr>
-                  <td>8
-                  <td>River
-                  <td>Tam
-                  <td>Passenger
-                  <td>Yes
-                      <td><a href=""> <button class="editBtn">Rediger</button></a>
-                          <td><a href=""> <button class="deleteBtn">Slet</button></a>
-              </tbody>
-            </table>
+      <table>
+    <thead>
+        <tr>
+            <th>Reservation id</th>
+            <th>Bruger id</th>
+            <th>Lader id</th>
+            <th>Tid</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href=""><button class="editBtn">Rediger</button></a></td>
+            <td><a href=""><button class="deleteBtn">Slet</button></a></td>
+        </tr>
+    </tbody>
+</table>
       </div>
 
       

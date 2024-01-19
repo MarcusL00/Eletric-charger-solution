@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="navbarContainer">
       
-            <a href="/Eletric-charger-solution/index.php" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
+            <a href="/Eletric-charger-solution/charger.php" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
             <div class="navbarToggle" id="mobileMenu">
                 <span class="bar"></span>
                 <span class="bar"></span>

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const selectedTime = document.querySelector('.toggle-button.active');
       if (selectedTime) {
         alert('Din reservation er blevet oprette til kl. ' + selectedTime.innerText);
-        window.location.href = '/index.html';
+        window.location.href = '/charger.php';
       } else {
         alert('Venligst vælg et tidspunkt.');
       }
