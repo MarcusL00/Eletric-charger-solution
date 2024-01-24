@@ -1,44 +1,17 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $pwd = $_POST["pwd"];
-    $email = $_POST["email"];
-    $licenseplate = $_POST["licenseplate"];
-    $licenseplateExtra = $_POST["licenseplateExtra"];
+require_once('includes/dbh.inc.php');
 
-    try {
-        require_once "dbh.inc.php";
+$query = "SELECT * FROM users";
 
-        $query = "INSERT INTO users (username, pwd, email, licenseplate, licenseplateExtra) VALUES (:username, :pwd, :email, :licenseplate, :licenseplateExtra);";
+try {
+    $result = $pdo->query($query);
 
-        $stmt = $pdo->prepare($query);
-
-        $stmt->bindParam(":username", $username);
-        $stmt->bindParam(":pwd", $pwd);
-        $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":licenseplate", $licenseplate);
-        $stmt->bindParam(":licenseplateExtra", $licenseplateExtra);
-
-
-
-        $stmt->execute();
-
-        $pdo = null;
-        $stmt = null;
-
-        header("Location: /Eletric-charger-solution/charger.php"); 
-
-        die();
-    } catch (PDOException $e) { 
-        die("Query failed: " . $e->getMessage());
-    }
-} else {
-    header("Location: /Eletric-charger-solution/charger.php"); 
+    // Fetch data as an associative array
+    $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo "Query failed: " . $e->getMessage();
 }
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,23 +59,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <table action="">
     <thead>
         <tr>
-            <th>Reservation id</th>
             <th>Bruger id</th>
-            <th>Lader id</th>
-            <th>Tid</th>
-            <th>Status</th>
+            <th>Bruger navn</th>
+            <th>Email</th>
+            <th>Regplade</th>
+            <th>Regplade 2</th>
+            <th>privilegier</th>
+            <th>oprettet</th>
+            <th>Rediger</th>
+            <th>Slet</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a href=""><button class="editBtn">Rediger</button></a></td>
-            <td><a href=""><button class="deleteBtn">Slet</button></a></td>
-        </tr>
+        <?php foreach ($rows as $row): ?>
+            <tr>
+                <td><?php echo $row['user_id'] ?></td>
+                <td><?php echo $row['username'] ?></td>
+                <td><?php echo $row['email'] ?></td>
+                <td><?php echo $row['licenseplate'] ?></td>
+                <td><?php echo $row['licenseplateExtra'] ?></td>
+                <td><?php echo $row['privilege'] ?></td>
+                <td><?php echo $row['created_at'] ?></td>
+                <td><a href=""><button class="editBtn">Rediger</button></a></td>
+                <td><a href=""><button class="deleteBtn">Slet</button></a></td>
+            </tr>
+        <?php endforeach; ?>
     </tbody>
 </table>
       </div>
