@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         require_once "dbh.inc.php";
 
-        $query = "SELECT * FROM reservations;";
+        $query = "INSERT INTO users (username, pwd, email, licenseplate, licenseplateExtra) VALUES (:username, :pwd, :email, :licenseplate, :licenseplateExtra);";
 
         $stmt = $pdo->prepare($query);
 
@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </ul>
       </div>
       <div class="tableContainer">
-      <table>
+      <table action="">
     <thead>
         <tr>
             <th>Reservation id</th>

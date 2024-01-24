@@ -9,27 +9,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="newUserContainer">
 
-        <h3>Opret bruger</h3>
-        <form action="includes/formhandler.inc.php" method="post">
-        <h4>Angiv dit ønskede brugernavn:</h4>
-        <input type="text" name="username" placeholder="Brugernavn">
-        
-        <h4>Vælg et sikkert kodeord:</h4>
-        <input type="text" name="pwd" placeholder="Kodeord">
-        
-        <h4>Indtast din email-adresse:</h4>
-        <input type="text" name="email" placeholder="Email">
-        
-        <h4>Angiv din nummerplade:</h4>
-        <input type="text" name="licenseplate" placeholder="Nummerplade nummer">
-        
-        <h4>Indtast en ekstra nummerplade (valgfrit):</h4>
-        <input type="text" name="licenseplateExtra" placeholder="Nummerplade nummer">
-        
-        <button>Opret</button>
-        </form>
+    <div class="userAuthContainer">
+        <div class="loginContainer">
+            <form action="includes/loginhandler.inc.php" method="post" class="loginContainerForm">
+                <h4>Login</h4>
+                <h4>Brugernavn:</h4>
+                <input type="text" name="username" placeholder="Brugernavn" class="loginContainerInput">
+    
+                <h4>Kodeord:</h4>
+                <input type="text" name="pwd" placeholder="Kodeord" class="loginContainerInput">
+    
+    
+                <button>Log ind</button>
+            </form>
+        </div>
+    
+    
+    
+        <div class="newUserContainer">
+    
+            <h3>Opret bruger</h3>
+            <form action="includes/formhandler.inc.php" method="post">
+            <h4>Angiv dit ønskede brugernavn:</h4>
+            <input type="text" name="username" placeholder="Brugernavn">
+            
+            <h4>Vælg et sikkert kodeord:</h4>
+            <input type="text" name="pwd" placeholder="Kodeord">
+            
+            <h4>Indtast din email-adresse:</h4>
+            <input type="text" name="email" placeholder="Email">
+            
+            <h4>Angiv din nummerplade:</h4>
+            <input type="text" name="licenseplate" placeholder="Nummerplade nummer">
+            
+            <h4>Indtast en ekstra nummerplade (valgfrit):</h4>
+            <input type="text" name="licenseplateExtra" placeholder="Nummerplade nummer">
+            
+            <button>Opret</button>
+            </form>
+        </div>
     </div>
 
 <script src="/JS/app.js" defer></script>
