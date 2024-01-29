@@ -6,7 +6,7 @@ $query = "SELECT * FROM users";
 try {
     $result = $pdo->query($query);
 
-    // Fetch data as an associative array
+    // Fetch data
     $rows = $result->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     echo "Query failed: " . $e->getMessage();
@@ -62,8 +62,8 @@ try {
             <th>Bruger id</th>
             <th>Bruger navn</th>
             <th>Email</th>
-            <th>Regplade</th>
-            <th>Regplade 2</th>
+            <th>Reg. nr</th>
+            <th>Reg- nr 2</th>
             <th>privilegier</th>
             <th>oprettet</th>
             <th>Rediger</th>
