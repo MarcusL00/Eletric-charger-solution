@@ -24,7 +24,7 @@
                 <input type="text" name="username" placeholder="Brugernavn" class="loginContainerInput">
     
                 <h4>Kodeord:</h4>
-                <input type="text" name="pwd" placeholder="Kodeord" class="loginContainerInput">
+                <input type="password" name="pwd" placeholder="Kodeord" class="loginContainerInput">
     
     
                 <button>Log ind</button>
@@ -41,7 +41,7 @@
             <input type="text" name="username" placeholder="Brugernavn">
             
             <h4>Vælg et sikkert kodeord:</h4>
-            <input type="text" name="pwd" placeholder="Kodeord">
+            <input type="password" name="pwd" placeholder="Kodeord">
             
             <h4>Indtast din email-adresse:</h4>
             <input type="text" name="email" placeholder="Email">
