@@ -153,6 +153,8 @@ a.button {
 
     #navbarLogo {
         padding-left: 25px;
+        position: absolute;
+        top: 20%;
     }
 
     .navbarToggle .bar {
