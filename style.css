@@ -1,5 +1,10 @@
 
-body {
+body#loginPage{
+    background-image: url('Images/LoginPage.jpg');
+
+}
+
+body:not(#loginPage) {
     background: #E6F4E6;
 }
 

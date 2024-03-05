@@ -14,7 +14,7 @@ session_set_cookie_params([
 
 session_start();
 
-// checks if we have a session id; if not, regenerate one.
+// checks if we have a session id; if not, generate one.
 if (!isset($_SESSION['last_regeneration'])) {
     session_regenerate_id(true);
     $_SESSION['last_regeneration'] = time();

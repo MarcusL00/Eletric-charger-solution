@@ -14,7 +14,7 @@
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="loginPage">
 
     <div class="userAuthContainer">
         <div class="loginContainer">

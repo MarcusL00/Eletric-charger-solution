@@ -19,8 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirect to a charger page
             header("Location: /Eletric-charger-solution/charger.php");
             die();
-        } else {
-          
+        } else {      
             echo "Invalid username or password. Please try again.";
         }
     } catch (PDOException $e) { 
