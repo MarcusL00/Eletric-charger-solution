@@ -496,3 +496,19 @@ tbody tr:hover {
 .newUserContainer a:hover {
     text-decoration: underline;
 }
+
+.timeSlots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.timeSlot {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}

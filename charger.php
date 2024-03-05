@@ -57,6 +57,12 @@
                     <div class="card-body">
                         <h5 class="card-title">Ladestander 1</h5>
                         <a href="/Eletric-charger-solution/booking.php" class="btn custom-btn" id="charger1">Resever</a>
+                        <div class="timeSlots">
+                            <button class="timeSlot">08:00-10:00</button>
+                            <button class="timeSlot">10:00-12:00</button>
+                            <button class="timeSlot">12:00-14:00</button>
+                            <button class="timeSlot">14:00-16:00</button>
+                        </div>
 
                     </div>
                 </div>
@@ -68,6 +74,12 @@
                     <div class="card-body">
                         <h5 class="card-title">Ladestander 2</h5>
                         <a href="/Eletric-charger-solution/booking.php" class="btn custom-btn" id="charger2">Resever</a>
+                        <div class="timeSlots">
+                            <button class="timeSlot">08:00-10:00</button>
+                            <button class="timeSlot">10:00-12:00</button>
+                            <button class="timeSlot">12:00-14:00</button>
+                            <button class="timeSlot">14:00-16:00</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,6 +90,12 @@
                     <div class="card-body">
                         <h5 class="card-title">Ladestander 3</h5>
                         <a href="/Eletric-charger-solution/booking.php" class="btn custom-btn" id="charger3">Resever</a>
+                        <div class="timeSlots">
+                            <button class="timeSlot">08:00-10:00</button>
+                            <button class="timeSlot">10:00-12:00</button>
+                            <button class="timeSlot">12:00-14:00</button>
+                            <button class="timeSlot">14:00-16:00</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,6 +106,13 @@
                     <div class="card-body">
                         <h5 class="card-title">Ladestander 4</h5>
                         <a href="/Eletric-charger-solution/booking.php" class="btn custom-btn" id="charger4">Resever</a>
+
+                        <div class="timeSlots">
+                            <button class="timeSlot">08:00-10:00</button>
+                            <button class="timeSlot">10:00-12:00</button>
+                            <button class="timeSlot">12:00-14:00</button>
+                            <button class="timeSlot">14:00-16:00</button>
+                        </div>
                     </div>
                 </div>
             </div>
