@@ -101,13 +101,13 @@ a.button {
     align-items: center;
 }
 
-    a.button:hover {
-        color: #000;
-    }
+a.button:hover {
+    color: #000;
+}
 
-    a.button:hover, li.navbarBtn {
-        transition: 0.3s ease;
-    }
+a.button:hover, li.navbarBtn {
+    transition: 0.3s ease;
+}
 
 .navbarBtn:hover {
     background: #CBB9A8;
@@ -283,7 +283,7 @@ a.button {
     padding: 8px; 
     margin: 5px 0; 
     box-sizing: border-box; 
-  }
+}
 
 .formContainer{
     background-color: #dceadc;
@@ -302,7 +302,7 @@ a.button {
 .formText{
     margin-top: 10px;
 }
- label {
+label {
     display: block;
     margin-bottom: 5px;
 }
@@ -322,17 +322,17 @@ a.button {
 }
 
 .toggle-button {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
 }
 
 .toggle-button.active {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 
@@ -383,37 +383,37 @@ a.button {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 *, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 table {
-  background: #dceadc;
-  border-radius: 0.25em;
-  border-collapse: collapse;
-  margin: 1em;
+background: #dceadc;
+border-radius: 0.25em;
+border-collapse: collapse;
+margin: 1em;
 }
 th {
-  border-bottom: 1px solid #364043;
-  color: #2f933c;
-  font-size: 0.85em;
-  font-weight: 600;
-  padding: 0.5em 1em;
-  text-align: left;
+border-bottom: 1px solid #364043;
+color: #2f933c;
+font-size: 0.85em;
+font-weight: 600;
+padding: 0.5em 1em;
+text-align: left;
 }
 td {
-  color: #131313;
-  font-weight: 400;
-  padding: 0.65em 1em;
+color: #131313;
+font-weight: 400;
+padding: 0.65em 1em;
 }
 .disabled td {
-  color: #4F5F64;
+color: #4F5F64;
 }
 tbody tr {
-  transition: background 0.25s ease;
+transition: background 0.25s ease;
 }
 tbody tr:hover {
-  background: #95cd56;
+background: #95cd56;
 }
 .editBtn{
     color: #000; 

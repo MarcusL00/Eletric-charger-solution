@@ -48,15 +48,15 @@ try {
                 <li class="navbarItem">
                     <a href="/Eletric-charger-solution/admin.php" class="navbarLinks"><i class="bi bi-shield-lock-fill"></i> Admin</a>
                 </li>
-              <li class="navbarBtn">
-                  <a href="/Eletric-charger-solution/contact.php" class="button">
-                      Kontakt
-                  </a>
-              </li>
-          </ul>
-      </div>
-      <div class="tableContainer">
-      <table action="">
+                <li class="navbarBtn">
+                <a href="/Eletric-charger-solution/contact.php" class="button">
+                    Kontakt
+                </a>
+                </li>
+        </ul>
+    </div>
+    <div class="tableContainer">
+    <table action="">
     <thead>
         <tr>
             <th>Bruger id</th>
@@ -86,13 +86,12 @@ try {
         <?php endforeach; ?>
     </tbody>
 </table>
-      </div>
+    </div>
 
-      
-  <script src="/JS/app.js" defer></script>
-  <script src="/JS/reseveration.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-          crossorigin="anonymous"></script>
+<script src="/JS/app.js" defer></script>
+<script src="/JS/reseveration.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 </html>

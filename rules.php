@@ -14,7 +14,6 @@
     <!-- navbar  -->
     <nav class="navbar">
         <div class="navbarContainer">
-      
             <a href="/Eletric-charger-solution/charger.php" id="navbarLogo"><i class="bi bi-flower2"></i></i>Firkløverparken</a>
             <div class="navbarToggle" id="mobileMenu">
                 <span class="bar"></span>
@@ -25,16 +24,16 @@
                 <li class="navbarItem">
                     <a href="/Eletric-charger-solution/rules.php" class="navbarLinks">
                         Informationer
-                      </a>
-                  </li>
-                  <li class="navbarItem">
-                      <a href="/Eletric-charger-solution/booking.php" class="navbarLinks">
-                          Reservering
-                      </a>
-                  </li>
-                  <li class="navbarItem">
-                      <a href="/Eletric-charger-solution/admin.php" class="navbarLinks"><i class="bi bi-shield-lock-fill"></i> Admin</a>
-                  </li>
+                    </a>
+                </li>
+                <li class="navbarItem">
+                    <a href="/Eletric-charger-solution/booking.php" class="navbarLinks">
+                        Reservering
+                    </a>
+                </li>
+                <li class="navbarItem">
+                    <a href="/Eletric-charger-solution/admin.php" class="navbarLinks"><i class="bi bi-shield-lock-fill"></i> Admin</a>
+                </li>
                 <li class="navbarBtn">
                     <a href="/Eletric-charger-solution/contact.php" class="button">
                         Kontakt
@@ -43,16 +42,13 @@
             </ul>
         </div>
 </nav>
-
 <div class="rulesContainer">
     <article>
-
             <h3>Regler for ladestanderne</h3>
             <p>I hverdage må el-standerne kun benyttes i en periode på 2 timer mellem kl. 8:00 og 16:00
-              Efter dette tidsrum er der ingen tidsbegrænsning, og standerne kan frit anvendes.
-              Ved eventuelle problemer med personer, der har besat standerne for lang tid, bedes du venligst kontakte ejendomskontoret
+            Efter dette tidsrum er der ingen tidsbegrænsning, og standerne kan frit anvendes.
+            Ved eventuelle problemer med personer, der har besat standerne for lang tid, bedes du venligst kontakte ejendomskontoret
             </p>
-
             <h3> Informationer</h3>
             <p>Kontor- og telefontid: mandag - fredag kl. 8.00-9.00</p>
             <p>Tlf.: 43 62 48 55</p>
