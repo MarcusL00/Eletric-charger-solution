@@ -1,5 +1,6 @@
 <?php
 
+
 $dsn = "mysql:host=localhost;dbname=evchargerdb";
 $dbusername= "root";
 $dbpassword= "";
